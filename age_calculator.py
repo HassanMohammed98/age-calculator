@@ -39,7 +39,6 @@ def get_dob():
 def get_age(dob):
 
     # write code here
-	# ...
 	age = todays_date.year - dob['year']
 	if (todays_date.month < dob['month'] or (todays_date.month == dob['month'] and todays_date.day < dob['day'])):
 		age -=1
@@ -47,7 +46,6 @@ def get_age(dob):
 
 def main():
 	# write code here
-	# ...
 	while True:
 		dob = get_dob()
 		dob_compare = int(str(dob['year'])+str(dob['month']).rjust(2,"0")+str(dob['day']).rjust(2,"0"))
